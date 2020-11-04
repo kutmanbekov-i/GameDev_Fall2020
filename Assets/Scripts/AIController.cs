@@ -19,10 +19,10 @@ public class AIController : MonoBehaviour
 
         if (ball.transform.position.z < 0)
         {
-            if (ball.transform.position.x > paddleObject.transform.position.x && x < 19.5f)
+            if (ball.transform.position.x > paddleObject.transform.position.x && x < 15.5f)
             {
                 x += 0.25f;
-            } else
+            } else if (ball.transform.position.x < paddleObject.transform.position.x && x > -15.5f)
             {
                 x -= 0.25f;
             }
